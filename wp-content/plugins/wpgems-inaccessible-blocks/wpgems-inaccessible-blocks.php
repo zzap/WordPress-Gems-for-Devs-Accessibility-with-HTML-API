@@ -1,7 +1,9 @@
 <?php
 /**
- * Plugin Name:       Wpgems Inaccessible Blocks
- * Description:       Example block scaffolded with Create Block tool.
+ * Plugin Name:       WPGems Inaccessible Blocks
+ * Description:       Example block scaffolded with Create Block tool, and modified 
+ *                    following Troy Chaplin's tutorial at Core Dev Blog:
+ *                    https://developer.wordpress.org/news/2025/08/refactoring-the-multi-block-plugin-build-smarter-register-cleaner-scale-easier/
  * Version:           0.1.0
  * Requires at least: 6.7
  * Requires PHP:      7.4
