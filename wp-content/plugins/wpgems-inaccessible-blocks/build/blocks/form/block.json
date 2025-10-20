@@ -1,9 +1,9 @@
 {
   "$schema": "https://schemas.wp.org/trunk/block.json",
   "apiVersion": 3,
-  "name": "create-block/wpgems-inaccessible-blocks",
+  "name": "create-block/inaccessible-form",
   "version": "0.1.0",
-  "title": "Wpgems Inaccessible Blocks",
+  "title": "Inaccessible form",
   "category": "widgets",
   "icon": "smiley",
   "description": "Example block scaffolded with Create Block tool.",
@@ -11,7 +11,7 @@
   "supports": {
     "html": false
   },
-  "textdomain": "wpgems-inaccessible-blocks",
+  "textdomain": "inaccessible-form",
   "editorScript": "file:./index.js",
   "editorStyle": "file:./index.css",
   "style": "file:./style-index.css",

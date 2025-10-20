@@ -1,5 +1,5 @@
 {
-  "mappings": {
-    "wp-content/plugins": "./wp-content/plugins"
-  }
+    "mappings": {
+        "wp-content/plugins": "./wp-content/plugins"
+    }
 }
