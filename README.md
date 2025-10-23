@@ -29,7 +29,8 @@ It is built completely custom, starting with [HTML standards](https://html.spec.
 - [WP_HTML_Processor](https://developer.wordpress.org/reference/classes/wp_html_processor/)
   - [HTML_Serialization_Builder](https://gist.github.com/dmsnell/ff758c13e8d41bf9f0b75f3fd42ad1e5)? 😱
   - [WP_HTML_Search](https://gist.github.com/dmsnell/c390f73a4668ddc4b8fe178c752af333)😱😱
-
+- [Block filters](https://developer.wordpress.org/block-editor/reference-guides/filters/block-filters/)
+  - [`render_block` hook](https://developer.wordpress.org/reference/hooks/render_block/)
 ### Examples
 
 - [Add and remove classes](https://developer.wordpress.org/reference/classes/wp_html_tag_processor/#modifying-css-classes-for-a-found-tag)
