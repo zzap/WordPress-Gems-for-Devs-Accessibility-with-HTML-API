@@ -2,7 +2,7 @@
 /**
  * Plugin Name:     WPGems
  * Plugin URI:      https://github.com/zzap/WordPress-Gems-for-Devs-Accessibility-with-HTML-API/
- * Description:     Fix inaccessible maktup.
+ * Description:     Fix inaccessible markup.
  * Author:          Milana Cap
  * Author URI:      https://developerka.org
  * Text Domain:     wpgems

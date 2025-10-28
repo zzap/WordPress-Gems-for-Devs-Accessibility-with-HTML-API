@@ -28,7 +28,7 @@ export default function save() {
                 </p>
                 <div>
                     <label>Select an option:</label>
-                    <select id="options" name="options">
+                    <select id="options-id" name="options">
                         <option value="1">Option 1</option>
                         <option value="2">Option 2</option>
                     </select>

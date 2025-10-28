@@ -44,10 +44,19 @@ It is built completely custom, starting with [HTML standards](https://html.spec.
 
 ### Resources
 
+- [Accessibility development best practices](https://make.wordpress.org/accessibility/handbook/markup/)
 - [HTML Tag Processor Roadmap](https://github.com/WordPress/gutenberg/issues/44410)
 - [Progress Report: HTML API](https://make.wordpress.org/core/2023/08/19/progress-report-html-api/)
 - [Introducing the HTML API in WordPress 6.2](https://make.wordpress.org/core/2023/03/07/introducing-the-html-api-in-wordpress-6-2/)
 - [HTML standards](https://html.spec.whatwg.org/)
+
+### Tools 
+
+- online check [websiteaccessibilitychecker.com](https://websiteaccessibilitychecker.com/checker/index.php)
+- Chrome extension [axe DevTools](https://chromewebstore.google.com/detail/axe-devtools-web-accessib/lhdoppojpmngadmnindnejefpokejbdd)
+- Chrome extension [Funkify – Disability Simulator](https://chromewebstore.google.com/detail/funkify-%E2%80%93-disability-simu/ojcijjdchelkddboickefhnbdpeajdjg)
+- Chrome extension [HeadingsMap](https://chromewebstore.google.com/detail/headingsmap/flbjommegcjonpdmenkdiocclhjacmbi)
+- Chrome extension [WAVE Evaluation Tool](https://chromewebstore.google.com/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh)
 
 ### Equivalents in other PHP frameworks
 
