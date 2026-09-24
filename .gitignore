@@ -1,6 +1,9 @@
 # Ignore everything in this repository by default.
 /*
 !/.gitignore
+!/.wp-env.json
+!/LICENSE
+!/README.md
 
 # Re-include only the path needed to reach allowed plugins.
 !/wp-content/
