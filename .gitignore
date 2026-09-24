@@ -20,7 +20,3 @@
 !/wp-content/plugins/wpgems/**
 !/wp-content/plugins/wpgems-inaccessible-blocks/
 !/wp-content/plugins/wpgems-inaccessible-blocks/**
-
-# Optional alias if folder is ever named with double 'n'.
-!/wp-content/plugins/wpgems-innaccessible-blocks/
-!/wp-content/plugins/wpgems-innaccessible-blocks/**
