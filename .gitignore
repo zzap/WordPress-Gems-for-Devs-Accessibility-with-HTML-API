@@ -1,0 +1,22 @@
+# Ignore everything in this repository by default.
+/*
+!/.gitignore
+!/.wp-env.json
+!/LICENSE
+!/README.md
+
+# Re-include only the path needed to reach allowed plugins.
+!/wp-content/
+/wp-content/*
+!/wp-content/plugins/
+/wp-content/plugins/*
+
+# Allowlist: only these plugin folders are tracked.
+!/wp-content/plugins/HTML-Serialization-Builder/
+!/wp-content/plugins/HTML-Serialization-Builder/**
+!/wp-content/plugins/WP-HTML-Search/
+!/wp-content/plugins/WP-HTML-Search/**
+!/wp-content/plugins/wpgems/
+!/wp-content/plugins/wpgems/**
+!/wp-content/plugins/wpgems-inaccessible-blocks/
+!/wp-content/plugins/wpgems-inaccessible-blocks/**
