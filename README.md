@@ -44,6 +44,7 @@ It is built completely custom, starting with [HTML standards](https://html.spec.
 
 ### Resources
 
+- [ARIA Authoring Practices Guide - Patterns](https://www.w3.org/WAI/ARIA/apg/patterns/)
 - [Accessibility development best practices](https://make.wordpress.org/accessibility/handbook/markup/)
 - [HTML Tag Processor Roadmap](https://github.com/WordPress/gutenberg/issues/44410)
 - [Progress Report: HTML API](https://make.wordpress.org/core/2023/08/19/progress-report-html-api/)
