@@ -1,0 +1,27 @@
+{
+    "files.exclude": {
+        "wp-content/themes/twentytwentyfour": true,
+        "wp-content/themes/twentytwentythree": true,
+        "wp-content/themes/*.php": true,
+        "wp-content/uploads": true,
+        "wp-content/upgrade": true,
+        "wp-content/database": true,
+        "wp-content/mu-plugins": true,
+        "wp-content/themes": true,
+        "wp-content/plugins/akismet/": true,
+        "wp-content/plugins/hello.php": true,
+        "wp-content/plugins/index.php": true,
+        "wp-content/*.php": true,
+        "wp-admin": true,
+        "wp-includes": true,
+        "db": true,
+        "*.php": true,
+        "*.txt": true,
+        "*.md": true,
+        "*.html": true,
+        "*.json":true,
+        ".htaccess":true,
+        ".gitignore":true,
+        "LICENSE":true
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "files.exclude": {
+        "akismet/": true,
+        "*.php": true
+    }
+}

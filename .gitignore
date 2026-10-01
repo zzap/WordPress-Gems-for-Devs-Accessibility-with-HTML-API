@@ -4,12 +4,18 @@
 !/.wp-env.json
 !/LICENSE
 !/README.md
+!.vscode/
+!.vscode/**
 
 # Re-include only the path needed to reach allowed plugins.
 !/wp-content/
 /wp-content/*
 !/wp-content/plugins/
 /wp-content/plugins/*
+
+# Keep code editor settings
+!/wp-content/plugins/.vscode/
+!/wp-content/plugins/.vscode/**
 
 # Allowlist: only these plugin folders are tracked.
 !/wp-content/plugins/HTML-Serialization-Builder/
