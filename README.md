@@ -1,10 +1,11 @@
 # WordPress gems for devs: Accessibility with HTML API
 
-Repository for code examples and resources used in the "WordPress gems for devs: Accessibility with HTML API" talk.
+Repository for code examples and resources used in the "WordPress gems for devs: Accessibility with HTML API" talk/workshop.
 
 | Event  | Date | Branch | Links |
 | --- | --- | --- | --- |
 | IPC Munich 2025 | 29 October 2025 | [conf/IPCMunich2025](https://github.com/zzap/WordPress-gems-for-devs-HTML-API/tree/conf/IPCMunich2025) | [Event](https://phpconference.com/web-development/wordpress-accessibility-html-api/) \| [Slides](https://docs.google.com/presentation/d/1DgcoDLWSFOBdoFpFJxeTmQR6CDoOT_bOFXRjidD19HU/edit?usp=sharing) |
+| WP Suomi 2026 | 16 October 2026 | [conf/WPSuomi2026](https://github.com/zzap/WordPress-gems-for-devs-HTML-API/tree/conf/WPSuomi2026) | [Event](https://wpsuomi.fi/) \| [Slides](https://docs.google.com/presentation/d/1U_6-yZCEa5tLre9pW6nUutGRhM0JEIuszNIt1Vp9i5c/edit?usp=sharing) |
 
 ## HTML API
 
@@ -44,8 +45,16 @@ It is built completely custom, starting with [HTML standards](https://html.spec.
 
 ### Resources
 
-- [ARIA Authoring Practices Guide - Patterns](https://www.w3.org/WAI/ARIA/apg/patterns/)
+Accessibility:
+
+- [Give a form field an accessible name with a label](https://wpaccessibility.org/docs/topics/forms/input-label/accessible-name/)
+- [WP Accessibility Knowledge Base](https://wpaccessibility.org/)
 - [Accessibility development best practices](https://make.wordpress.org/accessibility/handbook/markup/)
+- [Developing for Web Accessibility](https://www.w3.org/WAI/tips/developing/)
+- [ARIA Authoring Practices Guide - Patterns](https://www.w3.org/WAI/ARIA/apg/patterns/)
+
+HTML API:
+
 - [HTML Tag Processor Roadmap](https://github.com/WordPress/gutenberg/issues/44410)
 - [Progress Report: HTML API](https://make.wordpress.org/core/2023/08/19/progress-report-html-api/)
 - [Introducing the HTML API in WordPress 6.2](https://make.wordpress.org/core/2023/03/07/introducing-the-html-api-in-wordpress-6-2/)
