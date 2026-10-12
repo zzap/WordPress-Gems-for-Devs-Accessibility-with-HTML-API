@@ -57,72 +57,20 @@ function wpgems_render_block( string $block_content, array $block ): string {
 
 		return $processor->get_updated_html();
 	}
-            
+    
     /**
-     * THE LONG WAY WITH DUPLICATED CODE
+     * THE PROPER WAY WITH NO REPEATING
+     * A single run
      * 
-     * Inaccessible form block 
-     * 
-     * Finds form fields in block's markup, and:
-     * 1. adds 'id' attribute if it's not present (uses 'name' attribute value)
-     * 2. finds labels without 'for' attribute, get's their closest form
-     *    field's 'id' attribute and sets its value as label's 'for' attribute.
-    */
+     * Finds LABELs without FOR attribute, looks for the form field right after it,
+     * gets the ID from the form field and sets it as FOR attr, or, if ID doesn't exist,
+     * gets the NAME from the form field and sets both FOR for LABEL and ID for form field with its value.
+     */
     if ( 'create-block/inaccessible-form' === $block['blockName'] ) {
         // define form fields we want to work with
         $form_fields = ['INPUT', 'SELECT'];
 
-        // initialise the processor and pass the block content to it
-        $processor = WP_HTML_Processor::create_fragment( $block_content );
-
-        // if nothing is returned by processor, return block content
-        if ( ! $processor ) {
-            return $block_content;
-        }
-
-        // loop through block content and look into every tag
-        while ( $processor->next_tag() ) {
-            // in HTML_Processor, every tag means closing tags as well, and we want to skip those
-            if ( $processor->is_tag_closer() ) {
-                continue;
-            }
-            // get the tag name
-            $tag = $processor->get_tag();
-            // if the found tag is not one of our defined form fields, continue
-            if ( ! in_array( $tag, $form_fields, true) ) {
-                continue;
-            }
-
-            // here we have all the INPUTs and SELECTs, 
-            // and we are looking at their ID attributes         
-            $id = $processor->get_attribute( 'id' );
-            
-            // if they have ID attributes, and they are not empty, continue
-            if ( is_string( $id ) && '' !== $id ) {
-                continue;
-            }
-
-            // here we have all the INPUTs and SELECTs without ID attributes, 
-            // and we are looking at their NAME attributes
-            $name = $processor->get_attribute( 'name' );
-            
-            // if the NAME attribute is found
-            if ( $name ) {
-                // we set the NAME attribute value as the ID values 
-                $processor->set_attribute( 'id', $name );       
-            }
-        }
-
-        // when we get out of the loop, 
-        // we check if there are any errors in modified HTML,
-        if ( $processor->get_last_error() ) {
-            // in which case we return the block content
-            return $block_content;
-        }
-        // we set the updated HTML to be the block content
-        $block_content = $processor->get_updated_html();
-
-        // start the second pass
+        // pass block content to the processor
         $processor = WP_HTML_Processor::create_fragment( $block_content );
         
         // if nothing is returned by processor, return block content
@@ -148,7 +96,7 @@ function wpgems_render_block( string $block_content, array $block ): string {
             // here we have our LABEL without FOR attribute, 
             // and we want to set the bookmark
             $processor->set_bookmark( 'label' );
-                // here you can check the depth with get_current_depth() method, but we're going to skip it
+            // here you can check the depth with get_current_depth() method, but we're going to skip it
 
             // initiate temp var for storing ID values
             $target_id = null;
@@ -174,9 +122,19 @@ function wpgems_render_block( string $block_content, array $block ): string {
                     // save its value into temp var 
                     if ( is_string( $id ) && '' !== $id ) {
                         $target_id = $id;
+                    // if the ID is not string, or is empty string 
+                    } elseif ( ! is_string( $id ) || '' === $id ) {
+                        // get the field's NAME attribute
+                        $name = $processor->get_attribute( 'name' );
+                        if ( $name ) {
+                            // set the value of the NAME attribute as value for the ID
+                            $processor->set_attribute( 'id', $name );
+                            // set that same NAME value as value for temp var
+                            $target_id = $name;
+                        }
                     }
+                    // get out as soon as you find first match, don't process further
                     break;
-
                 }
             }
 
