@@ -11,6 +11,8 @@
         "wp-content/plugins/akismet/": true,
         "wp-content/plugins/hello.php": true,
         "wp-content/plugins/index.php": true,
+        "wp-content/plugins/HTML-Serialization-Builder/": true,
+        "wp-content/plugins/WP-HTML-Search/": true,
         "wp-content/*.php": true,
         "wp-admin": true,
         "wp-includes": true,
